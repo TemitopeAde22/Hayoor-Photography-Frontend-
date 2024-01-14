@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Fira+Sans:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Fira+Sans:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@layer components {
+    .label {
+        @apply absolute left-0 -top-3.5 px-2 scale-75 bg-white text-gray-600 transition-all peer-placeholder-shown:text-[18px]
+         peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600;
+    }
+    .input {
+        @apply h-10 w-full border border-gray-300  text-gray-900 placeholder-transparent
+           focus:outline-none focus:border-black focus:border-2 px-5 placeholder:font-Roboto text-[14px];
+    }
+    .button {
+        @apply bg-black cursor-pointer ml-5 md:ml-0 py-2 px-5 font-semibold font-fira text-white 
+        rounded-md border-none mb-5 mt-2 outline-none text-[15px]
+    }
+}

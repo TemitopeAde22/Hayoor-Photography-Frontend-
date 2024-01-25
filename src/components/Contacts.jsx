@@ -55,7 +55,7 @@ function Contacts() {
                     />
                     <Socials
                         Icon={BsPinterest}
-                        Link={"https://www.instagram.com/hayoor/"}
+                        Link={"https://pin.it/1oLncGOsR"}
                     />
                     <Socials
                         Icon={FaFacebookSquare}

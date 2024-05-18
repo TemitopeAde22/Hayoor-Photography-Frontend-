@@ -120,6 +120,13 @@ function Home() {
                                             label="Last Name*"
                                             errors={errors}
                                             register={register}
+                                            validation={{
+                                                pattern: {
+                                                    value: USER_REGEX,
+                                                    message:
+                                                        "Name must contain letters only.",
+                                                },
+                                            }}
                                         />
                                     </div>
                                     <div className="relative">
@@ -310,7 +317,7 @@ function Home() {
                             <div className="px-3 py-2">
                                 <h1
                                     className={`font-Belanosima border-black mb-3  border-2 border-x-0 border-t-0 py-1 text-black text-[17px] ${
-                                        errors["Package Selection"]
+                                        errors["PackageSelection"]
                                             ? "text-red-600"
                                             : ""
                                     }`}

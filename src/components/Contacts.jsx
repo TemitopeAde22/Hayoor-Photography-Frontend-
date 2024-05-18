@@ -47,7 +47,7 @@ function Contacts() {
                     />
                     <Socials
                         Icon={BsTwitter}
-                        Link={"https://www.instagram.com/hayoor/"}
+                        Link={"https://twitter.com/Hayoor_"}
                     />
                     <Socials
                         Icon={ImWhatsapp}

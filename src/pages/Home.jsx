@@ -194,16 +194,62 @@ function Home() {
                                 >
                                     Type of Session ?
                                 </h3>
-                                <div className="flex gap-x-3 items-center">
+                                <div className="flex flex-col justify-center gap-y-3">
                                     <div className="">
                                         <RadioInput
-                                            id="Portrait"
+                                            id="BirthdayPortrait"
                                             name="TypeofSession"
-                                            value="Portrait"
-                                            label="Portrait"
+                                            value="Birthday Portrait"
+                                            label="Birthday Portrait"
                                             register={register}
                                         />
                                     </div>
+                                    <div className="">
+                                        <RadioInput
+                                            id="FamilyPortrait"
+                                            name="TypeofSession"
+                                            value="Family Portrait"
+                                            label="Family Portrait"
+                                            register={register}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <RadioInput
+                                            id="maternity"
+                                            name="TypeofSession"
+                                            value="maternity"
+                                            label="Maternity"
+                                            register={register}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <RadioInput
+                                            id="Campaign/E-commerce"
+                                            name="TypeofSession"
+                                            value="Campaign/E-commerce"
+                                            label="Campaign/E-commerce"
+                                            register={register}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <RadioInput
+                                            id="personalBranding"
+                                            name="TypeofSession"
+                                            value="personal Branding"
+                                            label="Personal Branding"
+                                            register={register}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <RadioInput
+                                            id="duoSession"
+                                            name="TypeofSession"
+                                            value="Duo Session"
+                                            label="Duo Session"
+                                            register={register}
+                                        />
+                                    </div>
+
                                     <div>
                                         <RadioInput
                                             id="Wedding"
@@ -314,7 +360,7 @@ function Home() {
                             </div>
 
                             {/* package and session */}
-                            <div className="px-3 py-2">
+                            {/* <div className="px-3 py-2">
                                 <h1
                                     className={`font-Belanosima border-black mb-3  border-2 border-x-0 border-t-0 py-1 text-black text-[17px] ${
                                         errors["PackageSelection"]
@@ -354,7 +400,7 @@ function Home() {
                                         />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* additional service */}
                             <div className="px-3 py-2">
